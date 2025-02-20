@@ -1,5 +1,5 @@
 import { Layout } from '@/components'
-import Statistics from '@/components/sections/stats'
+import Workflow from '@/components/sections/workflow'
 
 const Home = () => {
   return (
@@ -7,7 +7,8 @@ const Home = () => {
       {/* <TechStacks /> */}
       {/* <Social /> */}
       {/* <Contact/> */}
-      <Statistics />
+      {/* <Statistics /> */}
+      <Workflow />
     </Layout>
   )
 }
