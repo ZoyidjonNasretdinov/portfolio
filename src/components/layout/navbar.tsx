@@ -15,7 +15,7 @@ export default function Navbar() {
         href="/"
         className={`btn flex justify-center items-center gap-1 text-center px-1 py-3 rounded-[17px]  ${pathname === "/" ? "bg-[#A290FC]" : "bg-secondary text-white"}`}
       >
-        <CiUser /> Home
+        <CiUser /> About
       </Link>
       <Link
         href="/works"
