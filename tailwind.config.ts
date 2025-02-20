@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        "desktop-lg": "1800px", // Katta ekranlar (1800px+)
+        "desktop": { max: "1799px" }, // 1440px - 1799px
+        "tablet": { max: "1439px" }, // 810px - 1439px
+        "mobile": { max: "809px" },  // 809px dan kichik ekranlar
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
