@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "#101010",
         secondary: "#191919",
+        textPrimary: "#ccc",
         textColor: "#7F7F7F",
       },
       screens: {
