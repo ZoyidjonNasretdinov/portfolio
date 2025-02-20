@@ -30,9 +30,11 @@ const TechStacks = () => {
               </span>
               <span>{tech.title}</span>
             </div>
-            <span className='text-sm opacity-0 group-hover:opacity-100 transition-opacity'>
+            <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-1500 transform group-hover:rotate-0">
               <MdOutlineArrowOutward />
             </span>
+
+
           </li>
         ))}
       </ol>
