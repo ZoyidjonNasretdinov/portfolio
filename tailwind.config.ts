@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#101010",
+        secondary: "#191919",
       },
       screens: {
         "desktop-lg": "1800px", // Katta ekranlar (1800px+)
