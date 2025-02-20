@@ -15,6 +15,7 @@ const config: Config = {
         secondary: "#191919",
         textPrimary: "#ccc",
         textColor: "#7F7F7F",
+        textSecondary: "#A291FD",
       },
       screens: {
         "desktop-lg": "1800px", // Katta ekranlar (1800px+)
