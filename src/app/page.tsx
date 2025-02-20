@@ -1,11 +1,12 @@
 import { Layout } from '@/components'
-import Social from '@/components/sections/social'
+import Contact from '@/components/sections/contact'
 
 const Home = () => {
   return (
     <Layout>
       {/* <TechStacks /> */}
-      <Social />
+      {/* <Social /> */}
+      <Contact/>
     </Layout>
   )
 }
