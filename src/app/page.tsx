@@ -1,4 +1,5 @@
 import { Layout } from '@/components'
+import Projects from '@/components/sections/projects'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       {/* <Statistics /> */}
       {/* <Workflow /> */}
       {/* <Hero/> */}
+      <Projects />
     </Layout>
   )
 }
