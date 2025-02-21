@@ -1,5 +1,4 @@
 import { Layout } from '@/components'
-import Workflow from '@/components/sections/workflow'
 
 const Home = () => {
   return (
@@ -8,7 +7,8 @@ const Home = () => {
       {/* <Social /> */}
       {/* <Contact/> */}
       {/* <Statistics /> */}
-      <Workflow />
+      {/* <Workflow /> */}
+      {/* <Hero/> */}
     </Layout>
   )
 }
