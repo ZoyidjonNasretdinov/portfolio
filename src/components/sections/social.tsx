@@ -12,12 +12,12 @@ const Social = () => {
   ]
 
   return (
-    <section className='bg-primary w-[250px] rounded-[17px] p-4 text-textPrimary shadow-md'>
+    <section className='bg-primary w-[270px] rounded-[17px] p-4 text-textPrimary shadow-md'>
       <div className='mb-4'>
-        <p className='flex items-center justify-center gap-2 text-sm font-medium uppercase'>
-          <FiSun /> Follow me
+        <p className='flex items-center justify-center gap-2 text-[12px] font-medium uppercase'>
+          <FiSun className='text-textSecondary' size={16}/> Follow me
         </p>
-        <h2 className='text-2xl font-bold text-center'>Online Presence</h2>
+        <h2 className='text-xl font-bold text-center'>Online Presence</h2>
       </div>
       <ol className='flex flex-col gap-3'>
         {socialLinks.map((social, index) => (

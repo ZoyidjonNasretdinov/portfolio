@@ -8,14 +8,14 @@ import { SiProtondrive } from 'react-icons/si'
 
 const Workflow = () => {
   return (
-    <section className="bg-primary w-[350px] mx-auto rounded-[17px] p-4 text-textPrimary shadow-md relative overflow-hidden">
+    <section className="bg-primary w-[300px] mx-auto rounded-[17px] p-4 text-textPrimary shadow-md relative overflow-hidden">
       <div className="mb-4 text-center">
-        <h2 className="text-sm font-bold flex items-center justify-center gap-2 mb-2">
+        <h2 className="text-[12px] font-bold flex items-center justify-center gap-2 mb-2">
           <FaStarAndCrescent size={20} /> Work Process
         </h2>
-        <p className="text-2xl">Workflow Highlights</p>
+        <p className="text-xl">Workflow Highlights</p>
       </div>
-      <dl className="space-y-4 relative">
+      <dl className="space-y-2 relative">
         {[
           {
             term: 'Goals & Objectives',
@@ -50,11 +50,11 @@ const Workflow = () => {
         ].map(({ term, description, Icon }, index) => (
           <div
             key={index}
-            className="relative group bg-secondary rounded-[13px] px-4 py-3 transition-transform transform hover:scale-105"
+            className="relative group bg-secondary rounded-[13px] px-2 py-2 transition-transform transform hover:scale-105"
           >
-            <dt className="flex items-center gap-2 text-lg font-medium">
+            <dt className="flex items-center gap-1 text-[13px] font-medium">
               <span className="p-2 bg-[#282828] rounded-[5px] flex items-center justify-center">
-                <Icon size={20} />
+                <Icon size={16} />
               </span>
               {term}
             </dt>

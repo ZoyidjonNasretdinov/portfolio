@@ -6,7 +6,7 @@ import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb'
 
 const TechStacks = () => {
   return (
-    <section className='bg-primary w-[400px] rounded-[17px] p-4 text-textPrimary shadow-md'>
+    <section className='bg-primary w-[340px] rounded-[17px] p-4 text-textPrimary shadow-md'>
       <div className='mb-4 text-center'>
         <p className='flex gap-2 text-sm justify-center items-center font-medium'>
           <GoStack /> My Stacks
@@ -28,7 +28,7 @@ const TechStacks = () => {
               <span className='flex items-center justify-center p-1 bg-[#282828] rounded-[5px]'>
                 {tech.icon}
               </span>
-              <span>{tech.title}</span>
+              <span className='text-[10px]'>{tech.title}</span>
             </div>
             <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-1500 transform group-hover:rotate-0">
               <MdOutlineArrowOutward />

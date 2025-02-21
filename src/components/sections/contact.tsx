@@ -18,13 +18,13 @@ const Contact = () => {
   ]
 
   return (
-    <section className='bg-primary w-[350px] rounded-[17px] px-4 py-8 text-white shadow-md'>
-      <div className='mb-4 text-center'>
-        <span className='flex p-1 w-[80px] h-[80px] items-center justify-center mx-auto mb-6 bg-secondary rounded-full'>
-          <GiImperialCrown size={40} />
-        </span>
-        <h2 className='text-2xl font-bold'>Lets Work Together</h2>
-        <p className='text-sm text-textPrimary'>Lets Make Magic Happen Together</p>
+    <section className='bg-primary w-full rounded-[17px] px-4 py-5 text-white shadow-md'>
+      <div className='mb-3 text-center'>
+        <span className='flex p-1 w-[60px] h-[60px] items-center justify-center mx-auto mb-4 bg-secondary rounded-full'>
+          <GiImperialCrown size={30} className='text-textSecondary' />
+        </span> 
+        <h2 className='text-xl font-bold'>Lets Work Together</h2>
+        <p className='text-[16px] text-textPrimary'>Lets Make Magic Happen Together</p>
       </div>
       <ol className='flex flex-col gap-3 text-textPrimary'>
         {contacts.map((contact, index) => (
