@@ -12,7 +12,7 @@ import { TbSchool } from 'react-icons/tb'
 
 const Hero = () => {
   return (
-    <section className="bg-primary p-4 rounded-[17px] w-[450px] shadow-md mx-auto">
+    <section className="bg-primary p-4 rounded-[17px] w-full shadow-md mx-auto">
       {/* Header with image and personal info */}
       <div className="flex items-center gap-4 mb-4">
         <Image

@@ -2,7 +2,7 @@ import { PiProjectorScreenChart } from "react-icons/pi"
 
 const Projects = () => {
   return (
-    <section className="bg-primary w-[340px] rounded-[17px] h-[200px]  overflow-hidden relative shadow-lg">
+    <section className="bg-primary w-full rounded-[17px] h-[200px]  overflow-hidden relative shadow-lg">
       <div className="px-6 py-4">
         <h2 className="flex items-center justify-center gap-1 text-white mb-2">
           <PiProjectorScreenChart size={25} className="text-textSecondary" /> 

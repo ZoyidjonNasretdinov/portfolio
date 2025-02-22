@@ -15,22 +15,16 @@ const Home = () => {
     <Layout>
       <div className="flex flex-col md:flex-row gap-4 p-4">
         {/* Birinchi ustun */}
-        <div className="flex flex-col gap-3">
-          <div >
+        <div className="flex flex-col gap-3 w-[340px]">
             <TechStacks />
-          </div>
-          <div>
             <Projects />
-          </div>
-          <div>
             <Services />
-          </div>
         </div>
         {/* Ikkinchi ustun */}
-        <div className="flex flex-col gap-3">
-          <div><Statistics /></div>
-          <div><Hero /></div>
-          <div><Clients /></div>
+        <div className="flex flex-col gap-3 w-[450px]">
+          <Statistics />
+          <Hero />
+          <Clients />
         </div>
         {/* Uchinchi ustun */}
         <div className="flex flex-col gap-3 flex-1">
