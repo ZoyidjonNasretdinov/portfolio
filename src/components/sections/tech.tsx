@@ -6,17 +6,17 @@ import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb'
 
 const TechStacks = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] p-[2vw] text-textPrimary shadow-lg mobile:p-[4vw]">
+    <section className="bg-primary w-full h-[34vh] rounded-[1vw] px-[0.8vw] py-[2vh] text-textPrimary shadow-lg mobile:p-[4vw] relative">
       {/* Header */}
       <div className="mb-[2vh] text-center">
-        <p className="flex gap-[0.5vw] text-[1vw] justify-center items-center font-medium mobile:text-[2.5vw]">
-          <GoStack className="text-textSecondary text-[1.5vw] mobile:text-[3vw]" /> My Stacks
-        </p>
-        <h2 className="text-[2vw] font-bold mobile:text-[4vw]">Tech Arsenal</h2>
+        <h2 className="flex gap-[0.5vw] text-[0.8vw] justify-center items-center font-medium mobile:text-[2.5vw]">
+          <GoStack className="text-textSecondary text-[1.2vw] mobile:text-[3vw]" /> My Stacks
+        </h2>
+        <p className="text-[1.6vw] font-bold mobile:text-[4vw]">Tech Arsenal</p>
       </div>
 
-      {/* Tech list */}
-      <ol className="flex flex-wrap gap-[1vw] justify-center">
+      {/* Tech list with 2x2 grid */}
+      <ol className="grid grid-cols-2 gap-[0.7vw] justify-center">
         {[
           { icon: <TbBrandNextjs />, title: 'Next JS' },
           { icon: <SiNuxtdotjs />, title: 'Nuxt JS' },
@@ -25,18 +25,18 @@ const TechStacks = () => {
         ].map((tech, index) => (
           <li
             key={index}
-            className="relative flex items-center justify-between gap-[0.5vw] w-[calc(50%-0.5vw)] px-[1vw] py-[1vh] bg-secondary rounded-[0.8vw] 
-              transition-transform duration-300 transform hover:scale-110 hover:border hover:border-textSecondary group shadow-md"
+            className="relative flex items-center justify-between gap-[0.5vw] w-full h-[8vh] px-[0.4vw] py-[1vh] bg-secondary rounded-[0.8vw]
+              group shadow-md transition-transform duration-300 transform hover:scale-105 hover:border hover:border-textSecondary"
           >
             {/* Icon & Title */}
-            <div className="flex items-center gap-[0.5vw]">
+            <div className="flex items-center gap-[0.5vw] whitespace-nowrap overflow-hidden text-ellipsis">
               <span className="flex items-center justify-center p-[0.5vw] bg-[#282828] rounded-[0.5vw]">
                 {React.cloneElement(tech.icon, {
                   size: '1.5vw',
-                  className: 'text-textSecondary mobile:text-[3vw]',
+                  className: 'text-textSecondary mobile:text-[2.5vw]',
                 })}
               </span>
-              <span className="text-[0.9vw] mobile:text-[2.5vw]">{tech.title}</span>
+              <span className="text-[0.8vw] font-medium mobile:text-[2.2vw]">{tech.title}</span>
             </div>
 
             {/* Hover Arrow Icon */}

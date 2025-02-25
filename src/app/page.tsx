@@ -13,32 +13,37 @@ import Social from '@/components/sections/social'
 const Home = () => {
   return (
     <Layout>
-<div className="flex flex-col md:flex-row gap-4 p-4">
-  {/* Birinchi ustun */}
-  <div className="flex flex-col gap-3 w-[25vw]">
-    <TechStacks />
-    <Projects />
-    <Services />
-  </div>
-  {/* Ikkinchi ustun */}
-  <div className="flex flex-col gap-3 w-[35vw]">
-    <Statistics />
-    <Hero />
-    <Clients />
-  </div>
-  {/* Uchinchi ustun */}
-  <div className="flex flex-col gap-3 w-[40vw]">
-    <div className="flex flex-row gap-3">
-      <Testimonials />
-      <Workflow />
-    </div>
-    <div className="flex flex-row gap-3">
-      <Social />
-      <Contact />
-    </div>
-  </div>
-</div>
+      {/* Ustunlar uchun container */}
+      <div className="flex flex-col md:flex-row gap-[0.5vw] p-[1vw]">
+        {/* Birinchi ustun */}
+        <div className="flex flex-col gap-[0.5vw] w-[25vw]">
+          <TechStacks />
+          <Projects />
+          <Services />
+        </div>
 
+        {/* Ikkinchi ustun */}
+        <div className="flex flex-col gap-[0.5vw] w-[35vw]">
+          <Statistics />
+          <Hero />
+          <Clients />
+        </div>
+
+        {/* Uchinchi ustun */}
+        <div className="flex flex-col gap-[0.5vw] w-[40vw]">
+          {/* Yuqori qator */}
+          <div className="flex flex-row gap-[0.5vw]">
+            <Testimonials />
+            <Workflow />
+          </div>
+
+          {/* Pastki qator */}
+          <div className="flex flex-row gap-[0.5vw]">
+            <Social />
+            <Contact />
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
