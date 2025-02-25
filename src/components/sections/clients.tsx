@@ -7,9 +7,9 @@ const Clients = () => {
       h-[30vh] desktop-lg:h-[25vh] desktop:h-[30vh] tablet:h-[35vh] mobile:h-[40vh]">
       <div className="px-6 py-1">
         {/* Sarlavha va Ikona */}
-        <h2 className="flex items-center justify-center gap-2 text-white mb-3 
-          text-lg desktop-lg:text-lg desktop:text-lg tablet:text-2xl mobile:text-3xl">
-          <HiClipboardDocumentList size="1.5rem" className="text-textSecondary" />
+        <h2 className="flex items-center justify-center gap-2 text-white my-3 
+          text-[1vw] desktop-lg:text-[1vw] desktop:text-[1vw] tablet:text-2xl mobile:text-3xl">
+          <HiClipboardDocumentList size="1.2vw" className="text-textSecondary" />
           My Clients
         </h2>
 
