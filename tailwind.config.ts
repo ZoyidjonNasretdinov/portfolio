@@ -23,6 +23,20 @@ const config: Config = {
         "tablet": { max: "1439px" }, // 810px - 1439px
         "mobile": { max: "809px" },  // 809px dan kichik ekranlar
       },
+      animation: {
+        'carousel-right': 'scrollRight 15s linear infinite',
+        'carousel-left': 'scrollLeft 15s linear infinite',
+      },
+      keyframes: {
+        scrollRight: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        scrollLeft: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+    },
     },
   },
   plugins: [],
