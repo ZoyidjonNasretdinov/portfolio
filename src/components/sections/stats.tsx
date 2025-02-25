@@ -23,18 +23,26 @@ const statsData = [
 
 const Statistics = () => {
   return (
-    <section className="bg-primary w-full rounded-[17px] p-4 text-textPrimary shadow-md">
-      <ul className="flex gap-4 justify-center">
-        {statsData.map(({ count, label, Icon}, index) => (
+    <section className="bg-primary w-full rounded-[1vw] p-[2vw] text-textPrimary shadow-lg mobile:p-[4vw] relative">
+      {/* Statistics list */}
+      <ul className="flex gap-[2vw] justify-center">
+        {statsData.map(({ count, label, Icon }, index) => (
           <li
             key={index}
-            className="flex flex-col items-center gap-1 px-3 py-2 bg-secondary rounded-[13px]"
+            className="relative flex flex-col items-center gap-[0.5vw] px-[2vw] py-[1.5vh] bg-secondary rounded-[0.8vw] 
+              transition-transform duration-300 transform hover:scale-110 hover:border-2 hover:border-textSecondary shadow-md"
+            style={{ willChange: 'transform' }} // Optimallik uchun
           >
-            <p className="bg-gradient-to-b from-white to-black text-transparent bg-clip-text text-[50px] font-bold">
-              {count}<span className='text-textSecondary'>+</span>
+            {/* Count number with gradient text */}
+            <p className="bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text 
+              text-[3vw] font-extrabold mobile:text-[6vw]">
+              {count}
+              <span className="text-textSecondary">+</span>
             </p>
-            <span className="flex w-full mx-2 items-center justify-center gap-2 text-[8px] text-white  bg-[#141414] p-1 rounded-[5px]">
-              <Icon size={16}  className='text-textSecondary'/>
+
+            {/* Label with icon */}
+            <span className="flex items-center gap-[0.5vw] text-[1vw] mobile:text-[2.5vw] text-white bg-[#141414] px-[1vw] py-[0.5vh] rounded-[0.5vw]">
+              <Icon className="text-textSecondary text-[1.5vw] mobile:text-[3vw]" />
               {label}
             </span>
           </li>

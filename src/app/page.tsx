@@ -13,31 +13,32 @@ import Social from '@/components/sections/social'
 const Home = () => {
   return (
     <Layout>
-      <div className="flex flex-col md:flex-row gap-4 p-4">
-        {/* Birinchi ustun */}
-        <div className="flex flex-col gap-3 w-[340px]">
-            <TechStacks />
-            <Projects />
-            <Services />
-        </div>
-        {/* Ikkinchi ustun */}
-        <div className="flex flex-col gap-3 w-[450px]">
-          <Statistics />
-          <Hero />
-          <Clients />
-        </div>
-        {/* Uchinchi ustun */}
-        <div className="flex flex-col gap-3 flex-1">
-          <div className="flex flex-row gap-3 ">
-            <Testimonials />
-            <Workflow />
-          </div>
-          <div className="flex flex-row gap-3 ">
-            <Social />
-            <Contact />
-          </div>
-        </div>
-      </div>
+<div className="flex flex-col md:flex-row gap-4 p-4">
+  {/* Birinchi ustun */}
+  <div className="flex flex-col gap-3 w-[25vw]">
+    <TechStacks />
+    <Projects />
+    <Services />
+  </div>
+  {/* Ikkinchi ustun */}
+  <div className="flex flex-col gap-3 w-[35vw]">
+    <Statistics />
+    <Hero />
+    <Clients />
+  </div>
+  {/* Uchinchi ustun */}
+  <div className="flex flex-col gap-3 w-[40vw]">
+    <div className="flex flex-row gap-3">
+      <Testimonials />
+      <Workflow />
+    </div>
+    <div className="flex flex-row gap-3">
+      <Social />
+      <Contact />
+    </div>
+  </div>
+</div>
+
     </Layout>
   )
 }

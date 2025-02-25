@@ -8,58 +8,60 @@ import { SiProtondrive } from 'react-icons/si'
 
 const Workflow = () => {
   return (
-    <section className="bg-primary w-[300px] mx-auto rounded-[17px] p-4 text-textPrimary shadow-md relative overflow-hidden">
-      <div className="mb-4 text-center">
-        <h2 className="text-[12px] font-bold flex items-center justify-center gap-2 mb-2">
-          <FaStarAndCrescent size={20} /> Work Process
+    <section className="bg-primary w-[22vw] mobile:w-full mx-auto rounded-[1vw] p-[2vw] text-textPrimary shadow-lg relative overflow-hidden">
+      {/* Header */}
+      <div className="mb-[2vh] text-center">
+        <h2 className="text-[1vw] mobile:text-[3vw] font-bold flex items-center justify-center gap-[0.5vw] mb-[1vh]">
+          <FaStarAndCrescent className="text-[1.5vw] mobile:text-[3.5vw]" />
+          Work Process
         </h2>
-        <p className="text-xl">Workflow Highlights</p>
+        <p className="text-[1.5vw] mobile:text-[4vw]">Workflow Highlights</p>
       </div>
-      <dl className="space-y-2 relative">
+
+      {/* Workflow Steps */}
+      <dl className="space-y-[1vh] relative">
         {[
           {
             term: 'Goals & Objectives',
-            description:
-              'Defining project aims and target outcomes to guide design.',
+            description: 'Defining project aims and target outcomes to guide design.',
             Icon: GoGoal,
           },
           {
             term: 'Research',
-            description:
-              'Delving into user needs and market trends for informed decisions.',
+            description: 'Delving into user needs and market trends for informed decisions.',
             Icon: IoIosSearch,
           },
           {
             term: 'Wireframe',
-            description:
-              'Translating ideas into rough visuals and structural outlines.',
+            description: 'Translating ideas into rough visuals and structural outlines.',
             Icon: GiWireframeGlobe,
           },
           {
             term: 'Prototyping',
-            description:
-              'Crafting interactive models to visualize and refine design concepts.',
+            description: 'Crafting interactive models to visualize and refine design concepts.',
             Icon: SiProtondrive,
           },
           {
             term: 'Finalize Design',
-            description:
-              'Incorporating feedback and polishing design for launch.',
+            description: 'Incorporating feedback and polishing design for launch.',
             Icon: MdDesignServices,
           },
         ].map(({ term, description, Icon }, index) => (
           <div
             key={index}
-            className="relative group bg-secondary rounded-[13px] px-2 py-2 transition-transform transform hover:scale-105"
+            className="relative group bg-secondary rounded-[0.8vw] px-[1vw] py-[1vh] transition-transform duration-300 transform hover:scale-105 hover:border hover:border-textSecondary shadow-md"
           >
-            <dt className="flex items-center gap-1 text-[13px] font-medium">
-              <span className="p-2 bg-[#282828] rounded-[5px] flex items-center justify-center">
-                <Icon size={16} />
+            {/* Step Title */}
+            <dt className="flex items-center gap-[0.5vw] text-[0.9vw] mobile:text-[2.5vw] font-medium">
+              <span className="p-[0.5vw] bg-[#282828] rounded-[0.5vw] flex items-center justify-center">
+                <Icon className="text-textSecondary text-[1.2vw] mobile:text-[2.8vw]" />
               </span>
               {term}
             </dt>
+
+            {/* Tooltip Description */}
             <dd
-              className="absolute left-full top-0 ml-2 p-2 bg-secondary rounded-[13px] text-[12px] text-textPrimary opacity-0 transform -translate-x-2 transition-all duration-1500 group-hover:opacity-100 group-hover:translate-x-0 z-10"
+              className="absolute left-full top-0 ml-[1vw] p-[1vw] bg-secondary rounded-[0.8vw] text-[0.8vw] mobile:text-[2vw] text-textPrimary opacity-0 transform -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 z-10 shadow-lg"
             >
               <dfn className="font-semibold">{term}:</dfn> {description}
             </dd>

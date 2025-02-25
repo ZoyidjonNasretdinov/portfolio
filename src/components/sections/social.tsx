@@ -6,39 +6,44 @@ import { MdOutlineArrowOutward } from 'react-icons/md'
 
 const Social = () => {
   const socialLinks = [
-    { icon: <BiLogoTelegram size={20} />, title: 'Telegram', url: 'https://telegram.org' },
-    { icon: <FaInstagram size={20} />, title: 'Instagram', url: 'https://instagram.com' },
-    { icon: <FaLinkedinIn size={20} />, title: 'Linkedin', url: 'https://linkedin.com' },
+    { icon: <BiLogoTelegram className="text-[1.2vw] mobile:text-[3vw]" />, title: 'Telegram', url: 'https://telegram.org' },
+    { icon: <FaInstagram className="text-[1.2vw] mobile:text-[3vw]" />, title: 'Instagram', url: 'https://instagram.com' },
+    { icon: <FaLinkedinIn className="text-[1.2vw] mobile:text-[3vw]" />, title: 'LinkedIn', url: 'https://linkedin.com' },
   ]
 
   return (
-    <section className='bg-primary w-[270px] rounded-[17px] p-4 text-textPrimary shadow-md'>
-      <div className='mb-4'>
-        <p className='flex items-center justify-center gap-2 text-[12px] font-medium uppercase'>
-          <FiSun className='text-textSecondary' size={16}/> Follow me
-        </p>
-        <h2 className='text-xl font-bold text-center'>Online Presence</h2>
+    <section className="bg-primary w-[18vw] rounded-[1vw] p-[1.5vw] text-textPrimary shadow-lg mobile:w-full mobile:p-[4vw]">
+      {/* Header */}
+      <div className="mb-[2vh]">
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-[0.6vw] mobile:text-[2vw] font-medium uppercase">
+          <FiSun className="text-textSecondary text-[1vw] mobile:text-[2.5vw]" />
+          Follow me
+        </h2>
+        <p className="text-[1.2vw] font-bold text-center mobile:text-[4vw]">Online Presence</p>
       </div>
-      <ol className='flex flex-col gap-3'>
+
+      {/* Social Links */}
+      <ol className="flex flex-col gap-[1.2vh]">
         {socialLinks.map((social, index) => (
           <li
             key={index}
-            className='group flex items-center justify-between gap-2 px-3 py-2 bg-secondary rounded-[13px] transition-transform transform hover:scale-105'
+            className="group flex items-center justify-between gap-[1vw] px-[1vw] py-[1vh] bg-secondary rounded-[0.8vw] 
+              transition-transform transform hover:scale-110 hover:border hover:border-textSecondary duration-300"
           >
             <a
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className='flex items-center justify-between w-full'
+              className="flex items-center justify-between w-full"
             >
-              <div className='flex items-center gap-2'>
-                <span className='flex items-center justify-center p-1 bg-[#282828] rounded-[5px]'>
+              <div className="flex items-center gap-[0.5vw]">
+                <span className="flex items-center justify-center p-[0.5vw] bg-[#282828] rounded-[0.5vw]">
                   {social.icon}
                 </span>
-                <span>{social.title}</span>
+                <span className="text-[0.9vw] mobile:text-[2.5vw]">{social.title}</span>
               </div>
-              <span className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-1500 transform group-hover:rotate-0">
-                <MdOutlineArrowOutward />
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:translate-x-1">
+                <MdOutlineArrowOutward className="text-[1vw] mobile:text-[2.5vw]" />
               </span>
             </a>
           </li>

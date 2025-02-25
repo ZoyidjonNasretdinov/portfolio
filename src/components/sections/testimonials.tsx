@@ -3,12 +3,19 @@ import { GoCommentDiscussion } from 'react-icons/go'
 
 const Testimonials = () => {
   return (
-    <section className="bg-primary rounded-[17px] w-[340px] overflow-hidden relative shadow-lg">
-      <div className="px-6 py-4">
-        <h2 className="flex items-center justify-center gap-1 text-white mb-2">
-          <GoCommentDiscussion size={25} className="text-textSecondary" /> Testimonials
+    <section className="bg-primary rounded-[1vw] w-[20vw] mobile:w-full overflow-hidden  ">
+      {/* Header */}
+      <div className="px-[1.5vw] py-[2vh]">
+        {/* Icon va sarlavha */}
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1.5vh] text-[1.5vw] mobile:text-[4vw]">
+          <GoCommentDiscussion className="text-textSecondary text-[2vw] mobile:text-[4.5vw]" />
+          Testimonials
         </h2>
-        <p className="text-[18px] text-white flex justify-center mb-4">Rave Reviews Showcase</p>
+
+        {/* Subtitle */}
+        <p className="text-[1vw] mobile:text-[2.5vw] text-white flex justify-center mb-[2vh]">
+          Rave Reviews Showcase
+        </p>
       </div>
     </section>
   )
