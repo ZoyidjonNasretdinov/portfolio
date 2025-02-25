@@ -49,7 +49,7 @@ const Hero = () => {
          src={author}
          alt="Author"
          className="rounded-[0.5vw] w-[6vw] aspect-square object-cover 
-         desktop:w-[12vw] tablet:w-[15vw] mobile:w-[20vw]"
+         desktop:w-[6vw] tablet:w-[15vw] mobile:w-[20vw]"
        />
 
         <div className="flex-1">
