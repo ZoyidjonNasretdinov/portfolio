@@ -26,6 +26,7 @@ const config: Config = {
       animation: {
         'carousel-right': 'scrollRight 15s linear infinite',
         'carousel-left': 'scrollLeft 15s linear infinite',
+        "carousel-right-project": "scrollRight 50s linear infinite",
       },
       keyframes: {
         scrollRight: {

@@ -1,17 +1,20 @@
-import { PiProjectorScreenChart } from "react-icons/pi"
+import { project1, project2, project3, project4, project5, project6 } from "@/assets";
+import Image from "next/image";
+import { PiProjectorScreenChart } from "react-icons/pi";
 
 const Projects = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] h-[22vh] overflow-hidden relative shadow-lg mobile:h-[28vh]">
-      <div className="px-[1.5vw] py-[2vh]">
+    <section className="bg-primary w-full rounded-[1vw] h-[28.5vh] mobile:h-[28vh] overflow-hidden relative shadow-lg">
+      {/* Absolute Header */}
+      <div className="absolute insert-0 w-full px-[1.5vw] py-[2vh] z-10">
         {/* Header with icon */}
-        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1.2vw] mobile:text-[3vw]">
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[3vw]">
           <PiProjectorScreenChart className="text-textSecondary text-[1.5vw] mobile:text-[4vw]" />
           Projects
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[0.9vw] text-white flex justify-center mb-[1.5vh] mobile:text-[2.5vw]">
+        <p className="text-[1.2vw] text-white flex justify-center mb-[5vh] mobile:text-[2.5vw]">
           Works Gallery
         </p>
 
@@ -30,8 +33,25 @@ const Projects = () => {
           </a>
         </div>
       </div>
-    </section>
-  )
-}
 
-export default Projects
+      {/* Scrolling Images (Background) */}
+      <div className="relative top-[-8vh] left-0 w-full h-full flex items-end overflow-hidden">
+        <ul className="scrolling-images flex gap-[2vw] absolute w-[300vw] animate-carousel-right-project">
+          {[project1, project2, project3, project4, project5, project6].map((image, index) => (
+            <li key={index} className="w-[15vw] h-[10vh] mobile:w-[20vw] mobile:h-[15vh]">
+              <Image
+                src={image}
+                alt={`Project ${index + 1}`}
+                width={150}
+                height={100}
+                className="w-full h-full object-cover rounded-[0.5vw] shadow-md opacity-60 hover:opacity-100 transition-opacity duration-300"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

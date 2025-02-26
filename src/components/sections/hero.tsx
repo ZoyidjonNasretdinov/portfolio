@@ -11,6 +11,7 @@ import { HiOutlineDocumentDownload, HiOutlineEmojiHappy } from 'react-icons/hi'
 import { IoMdTime } from 'react-icons/io'
 import { PiTelegramLogo } from 'react-icons/pi'
 import { TbSchool } from 'react-icons/tb'
+import packageJson from '../../../package.json'
 
 const Hero = () => {
   const roles = useMemo(() => ['Developer', 'AI Engineer', 'Chess Player'], [])
@@ -59,6 +60,7 @@ const Hero = () => {
               Available To Work
             </p>
             <div className="flex items-center gap-[0.5vw]">
+              <p className='text-[0.7vw]'>{packageJson.version} v</p>
               <p className="text-[1vw] mobile:text-[2vw]">Resume</p>
               <a
                 href="/assets/Zoyidjon.pdf"
