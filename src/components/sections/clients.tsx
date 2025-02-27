@@ -26,7 +26,7 @@ const Clients = () => {
           {['Google', 'Amazon', 'Facebook', 'Apple', 'Microsoft'].map((client, index) => (
             <li
               key={index}
-              className="flex-shrink-0 w-[20%] bg-white text-primary font-bold rounded-lg shadow-md p-3 text-center text-sm tablet:text-base"
+              className="flex-shrink-0 w-[8vw] h-[6vh] bg-white text-primary font-bold rounded-lg shadow-md p-3 text-center text-sm tablet:text-base"
             >
               {client}
             </li>
@@ -34,11 +34,11 @@ const Clients = () => {
         </ul>
 
         {/* Chapga harakat qiluvchi karusel */}
-        <ul className="flex animate-carousel-left space-x-4 mt-4">
+        <ul className="flex animate-carousel-left space-x-4 mt-[1vh]">
           {['Tesla', 'Netflix', 'Adobe', 'Intel', 'Samsung'].map((client, index) => (
             <li
               key={index}
-              className="flex-shrink-0 w-[20%] bg-secondary text-white font-bold rounded-lg shadow-md p-3 text-center text-sm tablet:text-base"
+              className="flex-shrink-0 w-[8vw] h-[6vh] bg-secondary text-white font-bold rounded-lg shadow-md p-3 text-center text-sm tablet:text-base"
             >
               {client}
             </li>
