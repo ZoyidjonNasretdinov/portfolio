@@ -25,7 +25,7 @@ const TechStacks = () => {
         ].map((tech, index) => (
           <li
             key={index}
-            className="relative flex items-center justify-between gap-[0.5vw] w-full h-[8vh] px-[0.4vw] py-[1vh] bg-secondary rounded-[0.8vw]
+            className="relative flex items-center justify-between gap-[0.5vw] w-full h-[8vh] px-[0.8vw] py-[1vh] bg-secondary rounded-[0.8vw]
               group shadow-md transition-transform duration-300 transform hover:scale-105 hover:border hover:border-textSecondary"
           >
             {/* Icon & Title */}
