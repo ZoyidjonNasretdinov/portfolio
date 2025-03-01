@@ -30,7 +30,7 @@ const Home = () => {
         </div>
 
         {/* Uchinchi ustun */}
-        <div className="flex flex-col gap-[0.5vw] w-[40vw]">
+        <div className="flex flex-col gap-[0.5vw] w-[37vw]">
           {/* Yuqori qator */}
           <div className="flex flex-row gap-[0.5vw]">
             <Testimonials />

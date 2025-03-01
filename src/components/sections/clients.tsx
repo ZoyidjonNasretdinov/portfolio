@@ -1,52 +1,52 @@
-import React from 'react'
-import { HiClipboardDocumentList } from 'react-icons/hi2'
+import React from "react";
+import { HiClipboardDocumentList } from "react-icons/hi2";
 
 const Clients = () => {
   return (
-    <section className="bg-primary rounded-2xl w-full overflow-hidden relative shadow-lg 
-      h-[30vh] desktop-lg:h-[25vh] desktop:h-[30vh] tablet:h-[35vh] mobile:h-[40vh]">
-      <div className="px-6 py-1">
-        {/* Sarlavha va Ikona */}
-        <h2 className="flex items-center justify-center gap-2 text-white my-3 
-          text-[1vw] desktop-lg:text-[1vw] desktop:text-[1vw] tablet:text-2xl mobile:text-3xl">
-          <HiClipboardDocumentList size="1.2vw" className="text-textSecondary" />
+    <section className="bg-primary rounded-[1vw] w-full overflow-hidden relative shadow-lg h-[30vh] tablet:h-[35vh] mobile:h-[40vh]">
+      {/* Header */}
+      <div className="px-[2vw] py-[2vh]">
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1.2vw] mobile:text-[3vw]">
+          <HiClipboardDocumentList className="text-textSecondary text-[1.5vw] mobile:text-[4vw]" />
           My Clients
         </h2>
-
-        {/* Qo'shimcha matn */}
-        <p className="text-white flex justify-center mb-1 text-sm desktop-lg:text-sm desktop:text-base tablet:text-lg mobile:text-xl">
+        <p className="text-[0.9vw] text-white flex justify-center mb-[2vh] mobile:text-[2.5vw]">
           Satisfied Partners
         </p>
       </div>
 
       {/* Karusel */}
-      <div className="overflow-hidden w-full  rounded-xl p-2">
-        {/* O‘ngga harakat qiluvchi karusel */}
-        <ul className="flex animate-carousel-right space-x-4">
-          {['Google', 'Amazon', 'Facebook', 'Apple', 'Microsoft'].map((client, index) => (
-            <li
-              key={index}
-              className="flex-shrink-0 w-[8vw] h-[6vh] bg-white text-primary font-bold rounded-lg shadow-md p-3 text-center text-sm tablet:text-base"
-            >
-              {client}
-            </li>
-          ))}
-        </ul>
+      <div className="overflow-hidden w-full relative">
+        {/* O‘ngga harakat qiluvchi qator */}
+        <div className="w-full overflow-hidden">
+          <ul className="flex animate-carousel-right space-x-[2vw]">
+            {["Google", "Amazon", "Facebook", "Apple", "Microsoft"].map((client, index) => (
+              <li
+                key={index}
+                className="flex-shrink-0 w-[10vw] h-[6vh] bg-white text-primary font-bold rounded-lg shadow-md flex items-center justify-center text-[1vw] mobile:text-[2.5vw]"
+              >
+                {client}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        {/* Chapga harakat qiluvchi karusel */}
-        <ul className="flex animate-carousel-left space-x-4 mt-[1vh]">
-          {['Tesla', 'Netflix', 'Adobe', 'Intel', 'Samsung'].map((client, index) => (
-            <li
-              key={index}
-              className="flex-shrink-0 w-[8vw] h-[6vh] bg-secondary text-white font-bold rounded-lg shadow-md p-3 text-center text-sm tablet:text-base"
-            >
-              {client}
-            </li>
-          ))}
-        </ul>
+        {/* Chapga harakat qiluvchi qator */}
+        <div className="w-full overflow-hidden mt-[1.5vh]">
+          <ul className="flex animate-carousel-left space-x-[2vw]">
+            {["Tesla", "Netflix", "Adobe", "Intel", "Samsung"].map((client, index) => (
+              <li
+                key={index}
+                className="flex-shrink-0 w-[10vw] h-[6vh] bg-secondary text-white font-bold rounded-lg shadow-md flex items-center justify-center text-[1vw] mobile:text-[2.5vw]"
+              >
+                {client}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;
