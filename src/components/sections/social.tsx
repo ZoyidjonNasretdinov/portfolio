@@ -12,7 +12,7 @@ const Social = () => {
   ];
 
   return (
-    <section className="bg-primary w-[18vw] rounded-[1vw] px-[1vw] py-[2vh] text-textPrimary shadow-lg mobile:w-full mobile:p-[4vw]">
+    <section className="bg-primary w-[18vw] rounded-[1vw] px-[1vw] py-[1.8vh] text-textPrimary shadow-lg mobile:w-full mobile:p-[4vw]">
       {/* Header */}
       <div className="mb-[1vh]">
         <h2 className="flex items-center justify-center gap-[0.5vw] text-[0.8vw] mobile:text-[2vw] font-medium uppercase">

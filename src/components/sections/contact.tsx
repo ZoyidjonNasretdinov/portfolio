@@ -8,12 +8,12 @@ const Contact = () => {
     {
       icon: <MdOutlineEmail className="text-[1vw] tablet:text-[1.5vw] mobile:text-[2vw]" />,
       title: "Email Me",
-      url: "mailto:your-email@example.com",
+      url: "zoyidjonnasretdinovcoder@gmail.com",
     },
     {
       icon: <RiCalendarScheduleLine className="text-[1vw] tablet:text-[1.5vw] mobile:text-[2vw]" />,
       title: "Schedule a Call",
-      url: "https://calendly.com/your-calendly",
+      url: "https://calendly.com/zoyidjonnasretdinovcoder",
     },
   ];
 

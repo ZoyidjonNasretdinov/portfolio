@@ -13,8 +13,8 @@ import Social from '@/components/sections/social'
 const Home = () => {
   return (
     <Layout>
-      {/* Ustunlar uchun container */}
-      <div className="flex flex-col md:flex-row gap-[0.5vw] p-[1vw]">
+      {/* Desktop */}
+      <div className="hidden md:flex flex-col md:flex-row gap-[0.5vw] p-[1vw] h-[100vh]">
         {/* Birinchi ustun */}
         <div className="flex flex-col gap-[0.5vw] w-[25vw]">
           <TechStacks />
@@ -43,6 +43,38 @@ const Home = () => {
             <Contact />
           </div>
         </div>
+      </div>
+
+      {/* Tablet */}
+      <div className='hidden sm:flex md:hidden flex-col  p-[2vw]'>
+        <div className="w-[30vw]">
+          <TechStacks />
+          <Projects />
+          <Services />
+          <Testimonials />
+          <Social />
+        </div>
+        <div className="w-[65vw]">
+          <Statistics />
+          <Hero />
+          <Workflow />
+          <Clients />
+          <Contact />
+        </div>
+      </div>
+
+      {/* Mobile */}
+      <div className="flex md:hidden flex-col p-[3vw] gap-[2vh]">
+        <Hero />
+        <Statistics />
+        <Clients />
+        <TechStacks />
+        <Projects />
+        <Services />
+        <Testimonials />
+        <Workflow />
+        <Social />
+        <Contact />
       </div>
     </Layout>
   )
