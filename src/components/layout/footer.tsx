@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import packageJson from '../../../package.json'
 
 const Footer = () => {
   const pathname = usePathname();
@@ -28,7 +29,7 @@ const Footer = () => {
           Services
         </Link>
       </nav>
-      <p className="mt-4">&copy; {new Date().getFullYear()} My Portfolio</p>
+      <p className="mt-4">&copy; {new Date().getFullYear()} My Portfolio <span>{packageJson.version} v</span></p>
     </footer>
   );
 };

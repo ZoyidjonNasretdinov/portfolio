@@ -2,15 +2,15 @@ import { GrServices } from "react-icons/gr";
 
 const Services = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] h-[30vh] mobile:h-[30vh] overflow-hidden relative shadow-lg">
+    <section className="bg-primary w-full rounded-[1vw] mobile:rounded-[4vw] h-[30vh] mobile:h-[30vh] overflow-hidden relative shadow-lg">
       {/* Absolute Header */}
       <div className="absolute top-0 left-0 w-full px-[1.5vw] py-[2vh] z-10">
         {/* Header */}
-        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[3vw]">
-          <GrServices className="text-textSecondary text-[1vw] mobile:text-[3.5vw]" />
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[4vw]">
+          <GrServices className="text-textSecondary text-[1vw] mobile:text-[4.5vw]" />
           Services
         </h2>
-        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[2vw]">
+        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[6vw]">
           Solution Suite
         </p>
 
@@ -19,7 +19,7 @@ const Services = () => {
           <a
             href="#"
             className="btn relative border-2 border-textSecondary text-textSecondary 
-              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] text-[0.8vw] mobile:text-[2vw] mobile:px-[2.5vw] mobile:py-[1vh]
+              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] mobile:rounded-[3vw] text-[0.8vw] mobile:text-[4vw] mobile:px-[4.5vw] mobile:py-[2vh]
               hover:bg-textSecondary hover:text-primary transition-all duration-300 
               hover:scale-110 overflow-hidden group"
           >
@@ -37,7 +37,7 @@ const Services = () => {
           {['Web Development', 'Mobile Apps', 'Cloud Solutions', 'UI/UX Design', 'SEO'].map((service, index) => (
             <li
               key={index}
-              className="flex-shrink-0 w-[8vw] h-[6vh] bg-white text-primary font-bold rounded-lg shadow-md flex items-center justify-center text-[0.8vw] mobile:text-[2vw]"
+              className="flex-shrink-0 w-[8vw] mobile:w-[36vw] h-[6vh] bg-white text-primary font-bold rounded-lg shadow-md flex items-center justify-center text-[0.8vw] mobile:text-[4vw] mobile:rounded-[3vw]"
             >
               {service}
             </li>
@@ -49,7 +49,7 @@ const Services = () => {
           {['AI Solutions', 'E-commerce', 'API Dev', 'Cyber Security', 'Testing'].map((service, index) => (
             <li
               key={index}
-              className="flex-shrink-0 w-[8vw] h-[6vh] bg-secondary text-white font-bold rounded-lg shadow-md flex items-center justify-center text-[0.8vw] mobile:text-[2vw]"
+              className="flex-shrink-0 w-[8vw] mobile:w-[36vw] h-[6vh] bg-secondary text-white font-bold rounded-lg shadow-md flex items-center justify-center text-[0.8vw] mobile:text-[4vw] mobile:rounded-[3vw]"
             >
               {service}
             </li>
