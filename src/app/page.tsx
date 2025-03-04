@@ -64,7 +64,7 @@ const Home = () => {
       </div>
 
       {/* Mobile */}
-      <div className="flex md:hidden flex-col p-[3vw] gap-[2vh]">
+      <div className="flex md:hidden flex-col px-[3vw] gap-[2vh]">
         <Hero />
         <Statistics />
         <Clients />

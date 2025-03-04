@@ -43,7 +43,7 @@ const Hero = () => {
   }, [displayedText, isDeleting, currentRole, roles])
 
   return (
-    <section className="bg-primary p-[1vw] rounded-[1vw] mobile:rounded-[6vw] w-full shadow-lg mx-auto mobile:p-[3vw]">
+    <section className="bg-primary p-[1vw] rounded-[1vw] mobile:rounded-[4vw] w-full shadow-lg mx-auto mobile:p-[3vw]">
       {/* Header with image and personal info */}
       <div className="flex items-center gap-[1vw] mb-[1.5vh]">
       <Image
@@ -87,7 +87,7 @@ const Hero = () => {
       </div>
 
       {/* Info tags */}
-      <ul className="flex flex-wrap gap-[0.8vw] mobile:gap-[1.5vw] mb-[1.5vh] bg-secondary rounded-[0.3vw] mobile:rounded-[3vw] p-[0.8vw]">
+      <ul className="flex flex-wrap gap-[0.8vw] mobile:gap-[1.5vw] mb-[1.5vh] bg-secondary rounded-[0.3vw] mobile:rounded-[3vw] p-[0.8vw] mobile:py-[3vw] mobile:px-[1.5vw]">
         {[
           { icon: <CiLocationOn />, text: 'Uzbekistan' },
           { icon: <GrLanguage />, text: 'English & Uzbek' },
@@ -110,9 +110,9 @@ const Hero = () => {
       </ul>
 
       {/* Social / Contact links */}
-      <ul className="grid grid-cols-2 gap-[3vw]">
+      <ul className="grid grid-cols-2 gap-[1vw] mobile:gap-[3vw]">
         {/* Telegram Button */}
-        <li className="btn flex items-center justify-center bg-secondary rounded-[0.5vw] mobile:rounded-[3vw] px-[1.5vw] py-[1vh] mobile:px-[3vw] mobile:py-[3vh] border-2 border-transparent hover:border-textSecondary transition-all duration-300 ease-in-out hover:scale-105">
+        <li className="btn flex items-center justify-center bg-secondary rounded-[0.5vw] mobile:rounded-[3vw] px-[1.5vw] py-[1.5vh] mobile:px-[3vw] mobile:py-[2vh] border-2 border-transparent hover:border-textSecondary transition-all duration-300 ease-in-out hover:scale-105">
           <a
             href="https://t.me/zoyidjonnasretdinov"
             className="flex items-center gap-[0.5vw] text-[1vw] text-textPrimary mobile:text-[4.5vw] font-medium"
@@ -125,7 +125,7 @@ const Hero = () => {
         </li>
 
         {/* Phone Button */}
-        <li className="btn flex items-center justify-center bg-secondary rounded-[0.5vw] mobile:rounded-[3vw] px-[1vw] py-[1vh] mobile:px-[3vw] mobile:py-[3vh] border-2 border-transparent hover:border-textSecondary transition-all duration-300 ease-in-out hover:scale-105">
+        <li className="btn flex items-center justify-center bg-secondary rounded-[0.5vw] mobile:rounded-[3vw] px-[1vw] py-[1.5vh] mobile:px-[3vw] mobile:py-[2vh] border-2 border-transparent hover:border-textSecondary transition-all duration-300 ease-in-out hover:scale-105">
           <a
             href="tel:+998950124501"
             className="flex items-center gap-[0.5vw] text-[1vw] text-textPrimary mobile:text-[4.5vw] font-medium"
