@@ -8,13 +8,13 @@ const Projects = () => {
       {/* Absolute Header */}
       <div className="absolute insert-0 w-full px-[1.5vw] py-[2vh] z-10">
         {/* Header with icon */}
-        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[3vw]">
-          <PiProjectorScreenChart className="text-textSecondary text-[1.5vw] mobile:text-[4vw]" />
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[4vw]">
+          <PiProjectorScreenChart className="text-textSecondary text-[1.5vw] mobile:text-[6vw]" />
           Projects
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[1.2vw] text-white flex justify-center mb-[5vh] mobile:text-[2.5vw]">
+        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[4.5vw]">
           Works Gallery
         </p>
 
@@ -23,10 +23,10 @@ const Projects = () => {
           <a
             href="#"
             className="btn relative border-2 border-textSecondary text-textSecondary 
-              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] text-[0.9vw] mobile:text-[2.5vw] mobile:px-[3vw] mobile:py-[1.5vh]
+              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] text-[0.9vw] mobile:text-[4.5vw] mobile:px-[3vw] mobile:py-[1.5vh]
               hover:bg-textSecondary hover:text-primary transition-all duration-300 
               hover:scale-110 overflow-hidden group"
-          >
+          > 
             {/* Border hover effekti */}
             <span className="absolute inset-0 rounded-[0.5vw] border-2 border-transparent group-hover:border-white transition-all duration-300"></span>
             View Works
@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="relative top-[-8vh] left-0 w-full h-full flex items-end overflow-hidden">
         <ul className="flex gap-[2vw] absolute w-[300vw] animate-carousel-right-project">
           {[project1, project2, project3, project4, project5, project6].map((image, index) => (
-            <li key={index} className="w-[15vw] h-[10vh] mobile:w-[20vw] mobile:h-[15vh]">
+            <li key={index} className="w-[15vw] h-[10vh] mobile:w-[55vw] mobile:h-[15vh]">
               <Image
                 src={image}
                 alt={`Project ${index + 1}`}
