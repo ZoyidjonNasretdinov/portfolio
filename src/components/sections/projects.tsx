@@ -4,7 +4,7 @@ import { PiProjectorScreenChart } from "react-icons/pi";
 
 const Projects = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] h-[28.5vh] mobile:h-[28vh] overflow-hidden relative shadow-lg">
+    <section className="bg-primary w-full rounded-[1vw] mobile:rounded-[4vw] h-[28.5vh] mobile:h-[28vh] overflow-hidden relative shadow-lg">
       {/* Absolute Header */}
       <div className="absolute insert-0 w-full px-[1.5vw] py-[2vh] z-10">
         {/* Header with icon */}
@@ -23,7 +23,7 @@ const Projects = () => {
           <a
             href="#"
             className="btn relative border-2 border-textSecondary text-textSecondary 
-              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] text-[0.9vw] mobile:text-[4.5vw] mobile:px-[3vw] mobile:py-[1.5vh]
+              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] mobile:rounded-[3vw] text-[0.9vw] mobile:text-[4.5vw] mobile:px-[3vw] mobile:py-[1.5vh]
               hover:bg-textSecondary hover:text-primary transition-all duration-300 
               hover:scale-110 overflow-hidden group"
           > 

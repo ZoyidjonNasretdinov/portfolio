@@ -12,14 +12,14 @@ const Social = () => {
   ];
 
   return (
-    <section className="bg-primary w-[18vw] rounded-[1vw] px-[1vw] py-[1.8vh] text-textPrimary shadow-lg mobile:w-full mobile:p-[4vw]">
+    <section className="bg-primary w-[18vw] rounded-[1vw] mobile:rounded-[3vw] px-[1vw] py-[1.8vh] text-textPrimary shadow-lg mobile:w-full mobile:p-[4vw]">
       {/* Header */}
       <div className="mb-[1vh]">
-        <h2 className="flex items-center justify-center gap-[0.5vw] text-[0.8vw] mobile:text-[2vw] font-medium uppercase">
-          <FiSun className="text-textSecondary text-[1vw] mobile:text-[2.5vw]" />
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-[0.8vw] mobile:text-[3vw] font-medium uppercase">
+          <FiSun className="text-textSecondary text-[1vw] mobile:text-[3.5vw]" />
           Follow me
         </h2>
-        <p className="text-[1.2vw] font-bold text-center mobile:text-[4vw]">Online Presence</p>
+        <p className="text-[1.2vw] font-bold text-center mobile:text-[5vw]">Online Presence</p>
       </div>
 
       {/* Social Links */}
@@ -27,7 +27,7 @@ const Social = () => {
         {socialLinks.map((social, index) => (
           <li
             key={index}
-            className="group border border-transparent flex items-center justify-between gap-[1vw] px-[1vw] py-[1vh] bg-secondary rounded-[0.8vw] 
+            className="group border border-transparent flex items-center justify-between gap-[1vw] px-[1vw] mobile:px-[3vw] py-[1vh] bg-secondary rounded-[0.8vw] mobile:rounded-[2vw] 
               transition-all duration-300  hover:border hover:border-textSecondary shadow-md"
           >
             <a
@@ -36,11 +36,11 @@ const Social = () => {
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full"
             >
-              <div className="flex items-center gap-[0.5vw]">
-                <span className="flex items-center justify-center p-[0.5vw] bg-[#282828] rounded-[0.5vw]">
+              <div className="flex items-center gap-[0.5vw] mobile:gap-[3vw]">
+                <span className="flex items-center justify-center p-[0.5vw] mobile:p-[2vw] bg-[#282828] rounded-[0.5vw] mobile:text-[4.5vw]">
                   {social.icon}
                 </span>
-                <span className="text-[0.9vw] mobile:text-[2.5vw]">{social.title}</span>
+                <span className="text-[0.9vw] mobile:text-[4.5vw]">{social.title}</span>
               </div>
               <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:translate-x-1">
                 <MdOutlineArrowOutward className="text-[1vw] mobile:text-[2.5vw]" />
