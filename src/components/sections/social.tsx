@@ -6,9 +6,9 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Social = () => {
   const socialLinks = [
-    { icon: <BiLogoTelegram className="text-[1.2vw] mobile:text-[3vw]" />, title: "Telegram", url: "https://telegram.org" },
-    { icon: <FaInstagram className="text-[1.2vw] mobile:text-[3vw]" />, title: "Instagram", url: "https://instagram.com" },
-    { icon: <FaLinkedinIn className="text-[1.2vw] mobile:text-[3vw]" />, title: "LinkedIn", url: "https://linkedin.com" },
+    { icon: <BiLogoTelegram className="text-[1.2vw] mobile:text-[6vw]" />, title: "Telegram", url: "https://telegram.org" },
+    { icon: <FaInstagram className="text-[1.2vw] mobile:text-[6vw]" />, title: "Instagram", url: "https://instagram.com" },
+    { icon: <FaLinkedinIn className="text-[1.2vw] mobile:text-[6vw]" />, title: "LinkedIn", url: "https://linkedin.com" },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Social = () => {
               className="flex items-center justify-between w-full"
             >
               <div className="flex items-center gap-[0.5vw] mobile:gap-[3vw]">
-                <span className="flex items-center justify-center p-[0.5vw] mobile:p-[2vw] bg-[#282828] rounded-[0.5vw] mobile:text-[4.5vw]">
+                <span className="flex items-center justify-center p-[0.5vw] mobile:p-[3vw] bg-[#282828] rounded-[0.5vw] mobile:rounded-[2vw] mobile:text-[6.5vw] text-textSecondary">
                   {social.icon}
                 </span>
                 <span className="text-[0.9vw] mobile:text-[4.5vw]">{social.title}</span>

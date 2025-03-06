@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="relative top-[-8vh] left-0 w-full h-full flex items-end overflow-hidden">
         <ul className="flex gap-[2vw] absolute w-[300vw] animate-carousel-right-project">
           {[project1, project2, project3, project4, project5, project6].map((image, index) => (
-            <li key={index} className="w-[15vw] h-[10vh] mobile:w-[55vw] mobile:h-[15vh]">
+            <li key={index} className="w-[20vw] h-[15vh] mobile:w-[55vw] mobile:h-[15vh]">
               <Image
                 src={image}
                 alt={`Project ${index + 1}`}
