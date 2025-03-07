@@ -18,10 +18,9 @@ const config: Config = {
         textSecondary: "#A291FD",
       },
       screens: {
-        "desktop-lg": "1800px", // Katta ekranlar (1800px+)
-        "desktop": { max: "1799px" }, // 1440px - 1799px
-        "tablet": { max: "1439px" }, // 810px - 1439px
-        "mobile": { max: "809px" },  // 809px dan kichik ekranlar
+        "mobile": { max: "809px" },               // 809px dan kichik ekranlar
+        "tablet": { min: "810px", max: "1439px" }, // 810px - 1439px oralig‘i
+        "desktop": { min: "1440px" }              // 1440px dan katta ekranlar
       },
       animation: {
         'carousel-right': 'scrollRight 15s linear infinite',

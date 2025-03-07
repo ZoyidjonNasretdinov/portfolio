@@ -13,8 +13,8 @@ import Social from '@/components/sections/social'
 const Home = () => {
   return (
     <Layout>
-      {/* Desktop */}
-      <div className="hidden md:flex flex-col md:flex-row gap-[0.5vw] p-[1vw] h-[100vh]">
+      {/* Desktop (1440px+) */}
+      <div className="hidden desktop:flex flex-col desktop:flex-row gap-[0.5vw] p-[1vw] h-[100vh]">
         {/* Birinchi ustun */}
         <div className="flex flex-col gap-[0.5vw] w-[25vw]">
           <TechStacks />
@@ -45,16 +45,16 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Tablet */}
-      <div className='hidden sm:flex md:hidden flex-col  p-[2vw]'>
-        <div className="w-[30vw]">
+      {/* Tablet (810px - 1439px) */}
+      <div className='hidden tablet:flex desktop:hidden flex-row gap-[1vw] p-[2vw]'>
+        <div className="w-[38%] flex flex-col gap-[1vw]">
           <TechStacks />
           <Projects />
-          <Services />
+          <Services />  
           <Testimonials />
           <Social />
         </div>
-        <div className="w-[65vw]">
+        <div className="w-[60%] flex flex-col gap-[1vw]">
           <Statistics />
           <Hero />
           <Workflow />
@@ -63,8 +63,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Mobile */}
-      <div className="flex md:hidden flex-col px-[3vw] gap-[2vh]">
+      {/* Mobile (809px dan kichik) */}
+      <div className="flex mobile:flex tablet:hidden desktop:hidden flex-col px-[3vw] gap-[2vh]">
         <Hero />
         <Statistics />
         <Clients />

@@ -4,17 +4,17 @@ import { PiProjectorScreenChart } from "react-icons/pi";
 
 const Projects = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] mobile:rounded-[4vw] h-[28.5vh] mobile:h-[28vh] overflow-hidden relative shadow-lg">
+    <section className="bg-primary w-full rounded-[1vw] mobile:rounded-[4vw] tablet:rounded-[2vw] h-[28.5vh] mobile:h-[28vh] overflow-hidden relative shadow-lg">
       {/* Absolute Header */}
       <div className="absolute insert-0 w-full px-[1.5vw] py-[2vh] z-10">
         {/* Header with icon */}
-        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[4vw]">
-          <PiProjectorScreenChart className="text-textSecondary text-[1.5vw] mobile:text-[6vw]" />
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[4vw] tablet:text-[1.5vw]">
+          <PiProjectorScreenChart className="text-textSecondary text-[1.5vw] mobile:text-[6vw] tablet:text-[3vw]" />
           Projects
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[4.5vw]">
+        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[4.5vw] tablet:text-[2.5vw]">
           Works Gallery
         </p>
 
@@ -23,12 +23,12 @@ const Projects = () => {
           <a
             href="#"
             className="btn relative border-2 border-textSecondary text-textSecondary 
-              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] mobile:rounded-[3vw] text-[0.9vw] mobile:text-[4.5vw] mobile:px-[3vw] mobile:py-[1.5vh]
+              px-[1.2vw] py-[0.6vh] rounded-[0.5vw] mobile:rounded-[3vw] text-[0.9vw] mobile:text-[4.5vw]  tablet:text-[2vw] mobile:px-[3vw] mobile:py-[1.5vh]
               hover:bg-textSecondary hover:text-primary transition-all duration-300 
               hover:scale-110 overflow-hidden group"
           > 
             {/* Border hover effekti */}
-            <span className="absolute inset-0 rounded-[0.5vw] border-2 border-transparent group-hover:border-white transition-all duration-300"></span>
+            <span className="absolute inset-0 rounded-[0.5vw] border-2 border-transparent group-hover:border-white transition-all duration-300 text-[2vw]"></span>
             View Works
           </a>
         </div>

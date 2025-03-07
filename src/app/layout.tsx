@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 
 // 🔥 SEO uchun maksimal darajada optimallashtirilgan metadata
 export const metadata: Metadata = {
-  title: "Zoyidjon | Full-Stack Developer & AI Mutaxassisi",
+  title: "Zoyidjon Nasretdinov",
   description:
-    "Men Zoyidjon, tajribali Full-Stack Developer. Next.js, Nuxt.js, NestJS, AI, Data Science, Computer Vision, NLP va React Native texnologiyalarida mutaxassis.",
+    "Mening ismim Zoyidjon, tajribali Full-Stack Developer. Next.js, Nuxt.js, NestJS, AI, Data Science, Computer Vision, NLP va React Native texnologiyalarida mutaxassisman.",
   keywords: [
     "Full-Stack Developer",
     "Next.js Mutaxassisi",
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     "Machine Learning",
     "Deep Learning",
   ],
-  authors: [{ name: "Zoyidjon", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Zoyidjon", url: "https://zoyidjon.versal.app" }],
   creator: "Zoyidjon",
   openGraph: {
-    title: "Zoyidjon | AI, Data Science va Full-Stack Dasturchi",
+    title: "Zoyidjon Nasretdinov",
     description:
       "Next.js, Nuxt.js, NestJS, AI, Data Science, Computer Vision, NLP va React Native texnologiyalarida tajribaga ega mutaxassis. Portfolio va loyihalarim bilan tanishing.",
     url: "https://yourwebsite.com",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         url: "https://yourwebsite.com/og-image.jpg", // Rasm URL manzili
         width: 1200,
         height: 630,
-        alt: "Ismingiz Portfolio Preview",
+        alt: "Zoyidjon Portfolio Preview",
       },
     ],
     locale: "uz_UZ",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ismingiz | Full-Stack Developer & AI Specialist",
+    title: "Zoyidjon Nasretdinov",
     description:
       "AI, Data Science, Next.js, Nuxt.js, NestJS va React Native texnologiyalari bo‘yicha mutaxassis.",
     creator: "@yourTwitterHandle",
@@ -86,7 +86,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Ismingiz",
+              name: "Zoyidjon",
               jobTitle: "Full-Stack Developer, AI Specialist",
               url: "https://yourwebsite.com",
               sameAs: [

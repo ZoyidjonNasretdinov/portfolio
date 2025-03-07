@@ -42,14 +42,14 @@ const Workflow: React.FC = () => {
   ];
 
   return (
-    <section className="bg-primary w-[22vw] mobile:w-full mx-auto rounded-[1vw] mobile:rounded-[4vw] p-[2vw] text-textPrimary shadow-lg relative">
+    <section className="bg-primary w-[22vw] mobile:w-full tablet:w-full mx-auto rounded-[1vw] mobile:rounded-[4vw] tablet:rounded-[2vw] p-[2vw] text-textPrimary shadow-lg relative">
       {/* Header */}
       <div className="mb-[2vh] text-center">
-        <h2 className="text-[1vw] mobile:text-[4vw] font-bold flex items-center justify-center gap-[0.5vw] mb-[1vh]">
-          <FaStarAndCrescent className="text-[0.8vw] mobile:text-[4.5vw] text-textSecondary" />
+        <h2 className="text-[1vw] mobile:text-[4vw] tablet:text-[2vw] font-bold flex items-center justify-center gap-[0.5vw] mb-[1vh]">
+          <FaStarAndCrescent className="text-[0.8vw] mobile:text-[4.5vw] tablet:text-[2.5vw] text-textSecondary" />
           Work Process
         </h2>
-        <p className="text-[1.3vw] mobile:text-[6vw]">Workflow Highlights</p>
+        <p className="text-[1.3vw] mobile:text-[6vw] tablet:text-[3vw]">Workflow Highlights</p>
       </div>
 
       {/* Workflow Steps */}
@@ -63,16 +63,16 @@ const Workflow: React.FC = () => {
           >
             {/* Step Title */}
             <div
-              className="relative flex items-center gap-[0.5vw] mobile:gap-[3vw] text-[0.9vw] mobile:text-[4.5vw] font-medium cursor-pointer"
+              className="relative flex items-center gap-[0.5vw] mobile:gap-[3vw] tablet:gap-[1vw] text-[0.9vw] mobile:text-[4.5vw] font-medium cursor-pointer"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <span className="p-[0.5vw] mobile:p-[2vw] bg-[#282828] rounded-[0.5vw] mobile:rounded-[2vw] flex items-center justify-center">
-                <Icon className="text-textSecondary text-[1.2vw] mobile:text-[6.8vw]" />
+              <span className="p-[0.5vw] mobile:p-[2vw] bg-[#282828] rounded-[0.5vw] mobile:rounded-[2vw] tablet:rounded-[1vw] flex items-center justify-center ">
+                <Icon className="text-textSecondary text-[1.2vw] mobile:text-[6.8vw] tablet:text-[3vw]" />
               </span>
-              <p>{title}</p>
+              <p className="tablet:text-[2vw]">{title}</p>
 
               {/* Arrow icon */}
-              <span className="absolute hidden right-2 p-[0.5vw] mobile:p-[2vw] bg-[#282828] rounded-[0.5vw] mobile:rounded-[2vw] mobile:flex tablet:flex items-center justify-center">
+              <span className="absolute hidden right-2 tablet:right-[0] p-[0.5vw] mobile:p-[2vw] bg-[#282828] rounded-[0.5vw] mobile:rounded-[2vw] mobile:flex tablet:flex items-center justify-center">
                 <FaArrowDown
                   className={`text-textSecondary text-[1.2vw] mobile:text-[6.8vw] transition-transform ${
                     openIndex === index ? "rotate-180" : ""
@@ -83,17 +83,17 @@ const Workflow: React.FC = () => {
 
             {/* Description (Hover - faqat desktopda) */}
             <p
-              className={`absolute left-[-16vw] top-1/2 transform -translate-y-1/2 bg-secondary shadow-lg rounded-[0.8vw] p-[1vw] text-[0.8vw] w-[15vw] opacity-0 transition-opacity duration-300
+              className={`absolute  left-[-16vw] top-1/2 transform -translate-y-1/2 bg-secondary shadow-lg rounded-[0.8vw] p-[1vw] text-[0.8vw] w-[15vw] opacity-0 transition-opacity duration-300
               ${hoverIndex === index ? "opacity-100" : ""} 
-              hidden md:block`}
+              hidden desktop:block`}
             >
               <b className="font-semibold block">{title}</b> {description}
             </p>
 
             {/* Description (Bosganda - mobil */}
             <p
-              className={`text-textPrimary bg-secondary shadow-lg rounded-[0.8vw] p-[1vw] mobile:py-[5vh] text-[0.8vw] mobile:text-[5vw] transition-opacity duration-300 ${
-                openIndex === index ? "opacity-100 block" : "opacity-0 hidden"
+              className={`hidden tablet:block mobile:block text-textPrimary bg-secondary shadow-lg rounded-[0.8vw] p-[1vw] mobile:py-[5vh] text-[0.8vw] mobile:text-[5vw] tablet:text-[2vw] transition-opacity duration-300 ${
+                openIndex === index ? "opacity-100 block" : "opacity-0 mobile:hidden tablet:hidden"
               }`}
             >
               <b className="font-semibold hidden">{title}</b> {description}
