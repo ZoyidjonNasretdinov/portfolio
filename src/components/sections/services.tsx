@@ -2,15 +2,15 @@ import { GrServices } from "react-icons/gr";
 
 const Services = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] mobile:rounded-[4vw] h-[30vh] mobile:h-[30vh] overflow-hidden relative shadow-lg">
+    <section className="bg-primary w-full rounded-[1vw] mobile:rounded-[4vw] tablet:rounded-[2vw] h-[30vh] mobile:h-[30vh] tablet:h-[25vw] overflow-hidden relative shadow-lg">
       {/* Absolute Header */}
       <div className="absolute top-0 left-0 w-full px-[1.5vw] py-[2vh] z-10">
         {/* Header */}
-        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[4vw]">
-          <GrServices className="text-textSecondary text-[1vw] mobile:text-[4.5vw]" />
+        <h2 className="flex items-center justify-center gap-[0.5vw] text-white mb-[1vh] text-[1vw] mobile:text-[4vw] tablet:text-[1.5vw]">
+          <GrServices className="text-textSecondary text-[1vw] mobile:text-[4.5vw] tablet:text-[3vw]" />
           Services
         </h2>
-        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[6vw]">
+        <p className="text-[1.2vw] text-white flex justify-center mb-[3vh] mobile:text-[6vw] tablet:text-[2.5vw] tablet:mb-[3vw]">
           Solution Suite
         </p>
 
@@ -21,10 +21,10 @@ const Services = () => {
             className="btn relative border-2 border-textSecondary text-textSecondary 
               px-[1.2vw] py-[0.6vh] rounded-[0.5vw] mobile:rounded-[3vw] text-[0.8vw] mobile:text-[4vw] mobile:px-[4.5vw] mobile:py-[2vh]
               hover:bg-textSecondary hover:text-primary transition-all duration-300 
-              hover:scale-110 overflow-hidden group"
+              hover:scale-110 overflow-hidden group tablet:text-[1.5vw]"
           >
             {/* Hover border effect */}
-            <span className="absolute inset-0 rounded-[0.5vw] border-2 border-transparent group-hover:border-white transition-all duration-300"></span>
+            <span className="absolute inset-0 rounded-[0.5vw] border-2 border-transparent group-hover:border-white transition-all duration-300 tablet:text-[3vw]"></span>
             View All Services
           </a>
         </div>
