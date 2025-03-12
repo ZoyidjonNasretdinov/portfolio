@@ -28,19 +28,19 @@ const statsData = [
 
 const ServiceStatistics = () => {
   return (
-    <section className="bg-primary w-full rounded-[17px] p-4 text-textPrimary shadow-md">
+    <section className="bg-primary w-full rounded-[1vw] p-[0.5vw] text-textPrimary shadow-md">
       {/* Grid o‘rnida flex o‘rniga grid qo‘llash */}
-      <ul className="grid grid-cols-2 gap-4 justify-center">
+      <ul className="grid grid-cols-2 gap-[1vw] justify-center">
         {statsData.map(({ count, label, Icon }, index) => (
           <li
             key={index}
-            className="flex flex-col items-center gap-1 px-3 py-2 bg-secondary rounded-[13px]"
+            className="flex flex-col items-center gap-[0.5vw] px-[0.5vw] py-[0.5vw] bg-secondary rounded-[1vw] shadow-md"
           >
-            <p className="bg-gradient-to-b from-white to-black text-transparent bg-clip-text text-[50px] font-bold">
+            <p className="bg-gradient-to-b from-white to-black text-transparent bg-clip-text text-[3vw] font-bold">
               {count}
               <span className="text-textSecondary">+</span>
             </p>
-            <span className="flex w-full mx-2 items-center justify-center gap-2 text-[8px] text-white bg-[#141414] p-1 rounded-[5px]">
+            <span className="flex w-full mx-2 items-center justify-center gap-[0.5vw] text-[0.6vw] text-white bg-[#141414] p-[0.2vw] rounded-[1vw]">
               <Icon size={16} className="text-textSecondary" />
               {label}
             </span>
