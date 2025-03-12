@@ -16,7 +16,7 @@ const CompletedProjects = () => {
       <ul className='flex flex-wrap gap-[1vw] justify-center'>
         {[{ title: 'Web Development', icon: <FaLaptopCode className='text-[2vw]' />, desc: 'Creating functional websites with clean and responsive design.' },
           { title: 'AI Engineering', icon: <FaBrain className='text-[2vw]' />, desc: 'Developing AI-driven solutions for business automation.' }].map((service, index) => (
-          <li key={index} className='flex-1 min-w-[40%] max-w-[50%]'>
+          <li key={index} className='flex-1 min-w-[40%] max-w-[50%]  bg-[#111]'>
             <article className='flex flex-col gap-[0.5vw] mb-[1vw]'>
               <h2 className='flex items-center gap-[1vw] text-[1.2vw] text-white'>
                 <span className='p-[0.7vw] bg-secondary rounded-[0.5vw]'>{service.icon}</span>

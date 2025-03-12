@@ -1,7 +1,10 @@
 import { Layout } from '@/components'
 import CompletedProjects from '@/components/sections/completedprojects'
+import CompletedProjectsStatistics from '@/components/sections/completedProjectsStat'
 import Projects from '@/components/sections/projects'
 import ServiceAbout from '@/components/sections/serviceAbout'
+import ServiceAvailable from '@/components/sections/serviceAvailable'
+import ServiceBenefits from '@/components/sections/serviceBenefits'
 import ServicesCards from '@/components/sections/servicesCards'
 import ServiceStatistics from '@/components/sections/serviceStats'
 import React from 'react'
@@ -19,7 +22,11 @@ const Services = () => {
           <CompletedProjects />
           <ServicesCards />
         </div>
-        <div className="flex flex-col w-[18vw] gap-3"></div>
+        <div className="flex flex-col w-[18vw] gap-3">
+          <ServiceAvailable />
+          <CompletedProjectsStatistics />
+          <ServiceBenefits/>
+        </div>
       </div>
     </Layout>
   )
