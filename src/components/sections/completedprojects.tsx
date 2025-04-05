@@ -15,12 +15,12 @@ const CompletedProjects = () => {
     {
       title: 'Web Development',
       icon: <FaLaptopCode className='text-[2vw]' />,
-      desc: 'Crafting high-performance and scalable websites with modern technologies. We focus on clean, responsive UI/UX design , Crafting high-performance and scalable websites with modern technologies. We focus on clean, responsive UI/UX design  We focus on clean, responsive UI/UX design ',
+      desc: 'Crafting high-performance and scalable websites with modern technologies. We focus on clean, responsive UI/UX design , Crafting high-performance and scalable websites with modern technologies. We focus on clean, responsive UI/UX design  We focus on clean,',
     },
     {
       title: 'AI Engineering',
       icon: <FaBrain className='text-[2vw]' />,
-      desc: 'Designing and deploying intelligent AI-driven solutions such as predictive models, natural language processing, and computer Designing and deploying intelligent AI-driven solutions such as predictive models, natural language processing,Designing and deploying intelligent AI-driven  ',
+      desc: 'Designing and deploying intelligent AI-driven solutions such as predictive models, natural language processing, and computer Designing and deploying intelligent AI-driven solutions such as predictive models, natural language processing,Designing and    ',
     },
   ];
   
