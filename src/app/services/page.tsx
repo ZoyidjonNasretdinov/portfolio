@@ -22,7 +22,7 @@ const Services = () => {
           <CompletedProjects />
           <ServicesCards />
         </div>
-        <div className="flex flex-col w-[18vw] gap-3">
+        <div className="flex flex-col w-[18vw] gap-[0.5vw]">
           <ServiceAvailable />
           <CompletedProjectsStatistics />
           <ServiceBenefits/>
