@@ -10,7 +10,7 @@ const services = [
     experience: "5+ Years",
     completed: "30+",
     rate: "$150",
-    icon: <FaBolt className="text-xl text-purple-500" />,
+    icon: <FaBolt className="text-[2vw] text-purple-500" />,
   },
   {
     title: "Webflow Partner",
@@ -18,7 +18,7 @@ const services = [
     experience: "4+ Years",
     completed: "20+",
     rate: "$100",
-    icon: <SiWebflow className="text-xl text-purple-500" />,
+    icon: <SiWebflow className="text-[2vw] text-purple-500" />,
   },
   {
     title: "Framer Partner",
@@ -26,40 +26,40 @@ const services = [
     experience: "3+ Years",
     completed: "15+",
     rate: "$120",
-    icon: <FaWrench className="text-xl text-purple-500" />,
+    icon: <FaWrench className="text-[2vw] text-purple-500" />,
   },
 ];
 
 const ServicesCards = () => {
   return (
-    <section className="flex gap-2 p-[0.5vw]">
+    <section className="flex gap-[0.5vw] py-[0.5vw]">
       {services.map((service, index) => (
         <div
           key={index}
-          className="w-[full] flex-1 bg-[#111] p-6 rounded-2xl text-white shadow-md"
+          className="w-[full] flex-1 bg-[#111] p-[1.5vw] rounded-2xl text-white shadow-md"
         >
-          <div className="flex items-center gap-2 text-lg font-bold">
-            <span className="p-2 bg-[#222] rounded-lg">{service.icon}</span>
+          <div className="flex items-center gap-[1vw] text-[1.2vw] font-bold">
+            <span className="p-2 bg-[#222] rounded-[0.5vw] ">{service.icon}</span>
             {service.title}
           </div>
-          <p className="text-gray-400 mt-1">{service.description}</p>
+          <p className="text-gray-400 mt-[0.8vw]">{service.description}</p>
 
-          <div className="mt-4 space-y-2 text-sm">
-            <div className="flex justify-between border-b border-gray-700 pb-1">
+          <div className="mt-4 space-y-[1vw] text-[0.9vw]">
+            <div className="flex justify-between border-b border-gray-700 pb-[0.5vw]">
               <span className="text-gray-500">Experience</span>
               <span className="font-semibold">{service.experience}</span>
             </div>
-            <div className="flex justify-between border-b border-gray-700 pb-1">
+            <div className="flex justify-between border-b border-gray-700 pb-[0.5vw]">
               <span className="text-gray-500">Completed Works</span>
               <span className="font-semibold">{service.completed}</span>
             </div>
-            <div className="flex justify-between border-b border-gray-700 pb-1">
+            <div className="flex justify-between border-b border-gray-700 pb-[0.5vw]">
               <span className="text-gray-500">Hourly Rate</span>
               <span className="font-semibold">{service.rate}</span>
             </div>
           </div>
 
-          <button className="w-full flex items-center justify-center gap-2 bg-[#222] mt-4 py-2 rounded-lg text-white hover:bg-[#333] transition">
+          <button className="w-full flex items-center justify-center gap-[0.5vw] bg-[#222] mt-[0.8vw] py-[0.6vw] rounded-lg text-white hover:bg-[#333] transition">
             <BsCalendarEvent className="text-purple-400" />
             Schedule Call
           </button>
