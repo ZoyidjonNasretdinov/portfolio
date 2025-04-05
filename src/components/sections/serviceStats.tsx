@@ -41,7 +41,7 @@ const ServiceStatistics = () => {
               <span className="text-textSecondary">+</span>
             </p>
             <span className="flex w-full mx-2 items-center justify-center gap-[0.5vw] text-[0.6vw] text-white bg-[#141414] p-[0.5vw] rounded-[1vw]">
-              <Icon size={16} className="text-textSecondary" />
+              <Icon  className="text-textSecondary text-[1.2vw]" />
               {label}
             </span>
           </li>
