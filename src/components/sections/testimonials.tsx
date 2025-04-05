@@ -3,7 +3,7 @@ import { GoCommentDiscussion } from 'react-icons/go'
 
 const Testimonials = () => {
   return (
-    <section className="bg-primary rounded-[1vw] w-[20vw] mobile:w-full tablet:w-full  tablet:rounded-[2vw] overflow-hidden  ">
+    <section className="bg-primary rounded-[1vw] w-[20vw] tablet:h-[65.5vw] mobile:h-[140vw] mobile:w-full tablet:w-full  tablet:rounded-[2vw] overflow-hidden  mobile:rounded-[3vw] ">
       {/* Header */}
       <div className="px-[1.5vw] py-[2vh]">
         {/* Icon va sarlavha */}

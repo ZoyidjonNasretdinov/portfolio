@@ -18,9 +18,9 @@ const Footer = () => {
         </Link>
         <Link
           href="/work"
-          className={`btm ${pathname === "/work" ? "text-[#A290FC]" : ""}`}
+          className={`btm ${pathname === "/works" ? "text-[#A290FC]" : ""}`}
         >
-          Work
+          Works
         </Link>
         <Link
           href="/services"

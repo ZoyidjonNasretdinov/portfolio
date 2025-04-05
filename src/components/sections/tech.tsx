@@ -6,7 +6,7 @@ import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb'
 
 const TechStacks = () => {
   return (
-    <section className="bg-primary w-full h-[34vh] rounded-[1vw]  tablet:rounded-[2vw] px-[0.8vw] py-[2vh] text-textPrimary shadow-lg mobile:p-[4vw] relative">
+    <section className="bg-primary w-full rounded-[1vw]  tablet:rounded-[2vw] px-[0.8vw] py-[2vh] text-textPrimary shadow-lg mobile:p-[4vw] relative">
       {/* Header */}
       <div className="mb-[2vh] text-center">
         <h2 className="flex gap-[0.5vw] text-[0.8vw]  justify-center items-center font-medium mobile:text-[4vw] tablet:text-[1.6vw]">

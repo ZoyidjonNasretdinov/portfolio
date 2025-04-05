@@ -42,7 +42,7 @@ const Workflow: React.FC = () => {
   ];
 
   return (
-    <section className="bg-primary w-[22vw] mobile:w-full tablet:w-full mx-auto rounded-[1vw] mobile:rounded-[4vw] tablet:rounded-[2vw] p-[2vw] text-textPrimary shadow-lg relative">
+    <section className="bg-primary w-[22vw] mobile:w-full tablet:w-full mx-auto rounded-[1vw] mobile:rounded-[4vw] tablet:rounded-[2vw] p-[2vw] py-[2.5vw] text-textPrimary shadow-lg relative">
       {/* Header */}
       <div className="mb-[2vh] text-center">
         <h2 className="text-[1vw] mobile:text-[4vw] tablet:text-[2vw] font-bold flex items-center justify-center gap-[0.5vw] mb-[1vh]">

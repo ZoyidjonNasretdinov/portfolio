@@ -24,7 +24,7 @@ const statsData = [
 
 const Statistics = () => {
   return (
-    <section className="bg-primary w-full rounded-[1vw] p-[1vw] text-textPrimary shadow-lg mobile:p-[4vw]  relative overflow-hidden mobile:rounded-[3vw] tablet:rounded-[2vw]">
+    <section className="bg-primary w-full rounded-[1vw] p-[1.25vw] text-textPrimary shadow-lg mobile:p-[4vw]  relative overflow-hidden mobile:rounded-[3vw] tablet:rounded-[2vw]">
       {/* Statistics list */}
       <ul className="grid grid-cols-3 gap-[1vw] justify-center mobile:grid-cols-2 mobile:grid-rows-2 mobile:gap-[3vw] tablet:gap-[2vw]">
         {statsData.map(({ count, label, Icon }, index) => (
