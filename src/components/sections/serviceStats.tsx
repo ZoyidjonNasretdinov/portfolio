@@ -30,17 +30,17 @@ const ServiceStatistics = () => {
   return (
     <section className="bg-primary w-full rounded-[1vw] p-[0.5vw] text-textPrimary shadow-md">
       {/* Grid o‘rnida flex o‘rniga grid qo‘llash */}
-      <ul className="grid grid-cols-2 gap-[1vw] justify-center">
+      <ul className="grid grid-cols-2 gap-[0.5vw] justify-center">
         {statsData.map(({ count, label, Icon }, index) => (
           <li
             key={index}
-            className="flex flex-col items-center gap-[0.5vw] px-[0.5vw] py-[0.5vw] bg-secondary rounded-[1vw] shadow-md"
+            className="flex flex-col items-center px-[0.5vw] py-[0.5vw] bg-secondary rounded-[1vw] shadow-md"
           >
-            <p className="bg-gradient-to-b from-white to-black text-transparent bg-clip-text text-[3vw] font-bold">
+            <p className="bg-gradient-to-b from-white to-black text-transparent bg-clip-text text-[3.5vw] font-bold">
               {count}
               <span className="text-textSecondary">+</span>
             </p>
-            <span className="flex w-full mx-2 items-center justify-center gap-[0.5vw] text-[0.6vw] text-white bg-[#141414] p-[0.2vw] rounded-[1vw]">
+            <span className="flex w-full mx-2 items-center justify-center gap-[0.5vw] text-[0.6vw] text-white bg-[#141414] p-[0.5vw] rounded-[1vw]">
               <Icon size={16} className="text-textSecondary" />
               {label}
             </span>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ServiceAbout = () => {
     return (
-      <section className="bg-primary w-full rounded-[17px] h-[200px]  overflow-hidden relative shadow-lg">
+      <section className="bg-primary w-full py-[0.3vw] -rounded-[17px]  overflow-hidden relative shadow-lg rounded-[1vw]">
         <div className="px-6 py-4">
           <Image
             src={author}

@@ -11,42 +11,71 @@ const CompletedProjects = () => {
     { title: 'Machine Learning', count: 5 },
   ];
 
+  const services = [
+    {
+      title: 'Web Development',
+      icon: <FaLaptopCode className='text-[2vw]' />,
+      desc: 'Crafting high-performance and scalable websites with modern technologies. We focus on clean, responsive UI/UX design ',
+    },
+    {
+      title: 'AI Engineering',
+      icon: <FaBrain className='text-[2vw]' />,
+      desc: 'Designing and deploying intelligent AI-driven solutions such as predictive models, natural language processing, and computer ',
+    },
+  ];
+  
+
   return (
-    <section className='p-[1vw] bg-primary rounded-[1vw] text-textPrimary shadow-md'>
-      <ul className='flex flex-wrap gap-[1vw] justify-center'>
-        {[{ title: 'Web Development', icon: <FaLaptopCode className='text-[2vw]' />, desc: 'Creating functional websites with clean and responsive design.' },
-          { title: 'AI Engineering', icon: <FaBrain className='text-[2vw]' />, desc: 'Developing AI-driven solutions for business automation.' }].map((service, index) => (
-          <li key={index} className='flex-1 min-w-[40%] max-w-[50%]  bg-[#111]'>
+    <section className=' text-textPrimary'>
+      <ul className='flex justify-center gap-[0.5vw] rounded-[1vw] px-[0.25vw] shadow-lg'>
+        {services.map((service, index) => (
+          <li
+            key={index}
+            className='w-[50%] bg-primary p-[1vw]  rounded-[1vw] border border-secondary shadow-md'
+          >
+            {/* Service Info */}
             <article className='flex flex-col gap-[0.5vw] mb-[1vw]'>
-              <h2 className='flex items-center gap-[1vw] text-[1.2vw] text-white'>
-                <span className='p-[0.7vw] bg-secondary rounded-[0.5vw]'>{service.icon}</span>
+              <h2 className='flex items-center gap-[1vw] text-[1.2vw] text-white font-semibold'>
+                <span className='p-[0.5vw] bg-secondary rounded-[0.6vw]'>{service.icon}</span>
                 {service.title}
               </h2>
-              <p className='text-[1vw] leading-tight'>{service.desc}</p>
+              <p className='text-[1.1vw] leading-tight text-gray-200'>{service.desc}</p>
             </article>
-            <a href='' className='flex w-full bg-secondary justify-center p-[1vw] rounded-[0.5vw] gap-[1vw] mb-[1vw]'>
-              <GrSchedule className='text-[1.5vw]' />Schedule Call
+
+            {/* Schedule Button */}
+            <a
+              href='#'
+              className='flex items-center justify-center gap-[1vw] bg-secondary text-white p-[1vw] rounded-[0.6vw] text-[1vw] font-medium hover:opacity-80 transition mb-[1vw]'
+            >
+              <GrSchedule className='text-[1.5vw]' />
+              Schedule Call
             </a>
-            <div className='flex justify-between mb-[1vw] text-[1vw]'>
-              <p>Completed Projects</p>
-              <a href='' className='text-[1vw]'>View Project</a>
-            </div>
-            <div className='w-full overflow-hidden bg-secondary rounded-[1vw] relative'>
-             <ul className='flex animate-carousel-left w-[200%] p-[0.5vw] gap-[1vw] '>
-               {projects.map((project, i) => (
-                  <li key={i} className='flex items-center bg-primary p-[0.5vw] gap-[0.5vw] rounded-[0.8vw]  whitespace-nowrap'>
-                   <span className='p-[0.7vw] bg-secondary rounded-[0.6vw]'>
-                     <MdWorkOutline className='text-[1.5vw]' />
-                   </span>
-                   {project.title}
-                   <span className='flex items-center justify-center bg-secondary text-[1vw] rounded-[0.3vw] w-[2vw] h-[2vw]'>
-                     {project.count}
-                   </span>
-                 </li>
-               ))}
-             </ul>
+
+            {/* Completed Projects Header */}
+            <div className='flex justify-between items-center text-[1vw] text-white font-medium mb-[1vw]'>
+              <span>Completed Projects</span>
+              <a href='#' className='hover:text-white'>View Projects</a>
             </div>
 
+            {/* Project List (Carousel style) */}
+            <div className='w-full overflow-hidden bg-secondary/30 rounded-[1vw]'>
+              <ul className='flex animate-carousel-left gap-[1vw] p-[1vw] w-max'>
+                {projects.map((project, i) => (
+                  <li
+                    key={i}
+                    className='flex items-center gap-[0.8vw] bg-primary text-white px-[1vw] py-[0.8vw] rounded-[0.8vw] whitespace-nowrap text-[1vw]'
+                  >
+                    <span className='p-[0.8vw] bg-secondary rounded-[0.6vw]'>
+                      <MdWorkOutline className='text-[1.5vw]' />
+                    </span>
+                    {project.title}
+                    <span className='w-[2vw] h-[2vw] flex items-center justify-center bg-secondary rounded-full text-[0.9vw] font-bold'>
+                      {project.count}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </li>
         ))}
       </ul>
