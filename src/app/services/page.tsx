@@ -12,7 +12,7 @@ import React from 'react'
 const Services = () => {
   return (
     <Layout>
-      <div className="flex gap-[0.5vw] p-[1vw] h-[100vh] ">
+      <div className="hidden desktop:flex gap-[0.5vw] p-[1vw] h-[100vh] ">
         <div className="flex flex-col w-[20vw] gap-[0.5vw]">
           <ServiceStatistics />
           <ServiceAbout />
@@ -27,6 +27,22 @@ const Services = () => {
           <CompletedProjectsStatistics />
           <ServiceBenefits/>
         </div>
+      </div>
+
+      {/* Tablet (810px - 1439px) */}
+      <div className='hidden tablet:flex desktop:hidden flex-row gap-[1vw] p-[2vw]'>
+        <div className="w-[38%] flex flex-col gap-[1vw]">
+               
+        </div>
+        <div className="w-[60%] flex flex-col gap-[1vw]">
+               
+        </div>
+      </div>
+      
+      {/* Mobile (809px dan kichik) */}
+      <div className="flex mobile:flex tablet:hidden desktop:hidden flex-col px-[3vw] gap-[2vh]">
+        <CompletedProjects />
+        <ServicesCards />
       </div>
     </Layout>
   )
